@@ -1,0 +1,90 @@
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+p {
+  margin: 0; }
+
+hr {
+  border-top: 1px solid #000;
+  width: 10%; }
+
+button {
+  background-color: white;
+  color: #e57e00;
+  border: 1px solid #e57e00;
+  padding: 5px 15px;
+  margin: 10px 0; }
+
+.main_banner {
+  background: url("../img/main_banner_home.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh; }
+  .main_banner .overlay {
+    background-color: #00000080;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .main_banner p.title {
+    color: white;
+    font-size: 2em; }
+  .main_banner p.subtitle {
+    color: white;
+    font-size: 2.2em;
+    font-weight: 900; }
+
+.what_is p.title {
+  color: #6cbad5;
+  font-size: 1.5em;
+  font-weight: 700; }
+.what_is p.text {
+  font-size: 1em;
+  font-weight: 300; }
+
+.benefits hr {
+  margin: 1em auto; }
+.benefits p.title {
+  color: #6cbad5;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center; }
+.benefits p.text {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
+.benefits i {
+  font-size: 35px;
+  color: #6cbad5;
+  margin: 0 10px; }
+.benefits p.benefit1 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #6cbad5; }
+.benefits p.benefit2 {
+  font-size: .8em;
+  font-weight: 300;
+  color: #848484; }
+
+.how_it_works {
+  background: url("../img/how_it_works.jpg");
+  background-position: center;
+  background-size: cover; }
+  .how_it_works .overlay {
+    background-color: #00000080;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .how_it_works p.title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700; }
+
+/*# sourceMappingURL=styles.css.map */
