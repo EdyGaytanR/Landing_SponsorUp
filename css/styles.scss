@@ -1,3 +1,8 @@
+$color_blue:#33c2db;
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -43,7 +48,55 @@ button {
     li.slick-active {
         button {
             &:before {
-                color: #6cbad5;
+                color: $color_blue;
+            }
+        }
+    }
+}
+
+.slick-prev,
+.slick-next {
+    width: 30px;
+    height: 30px;
+    &:before {
+        color: black;
+        font-size: 30px;
+    }
+}
+
+.top_bar {
+    a {
+        color: #000000;
+        font-weight: 700;
+        font-size: .7em;
+        i {
+            color: $color_blue;
+            font-size: 1.4em;
+        }
+    }
+    button {
+        width: 100%;
+        background: #33c2db;
+        .navbar-toggler-icon {
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+    }
+}
+
+nav {
+    background: $color_blue;
+    button {
+        border: 2px solid white;
+    }
+    ul {
+        li {
+            a {
+                font-size: .7em;
+                i {
+                    font-size: 1.5em;
+                }
             }
         }
     }
@@ -78,7 +131,7 @@ button {
 
 .what_is {
     p.title {
-        color: #6cbad5;
+        color: $color_blue;
         font-size: 1.5em;
         font-weight: 700;
     }
@@ -93,7 +146,7 @@ button {
         margin: 1em auto;
     }
     p.title {
-        color: #6cbad5;
+        color: $color_blue;
         font-size: 1.5em;
         font-weight: 700;
         text-align: center;
@@ -107,13 +160,13 @@ button {
     }
     i {
         font-size: 35px;
-        color: #6cbad5;
+        color: $color_blue;
         margin: 0 10px;
     }
     p.benefit1 {
         font-size: 1em;
         font-weight: 700;
-        color: #6cbad5;
+        color: $color_blue;
     }
     p.benefit2 {
         font-size: .8em;
@@ -194,18 +247,18 @@ button {
     p.title {
         font-size: 1.6em;
         font-weight: 700;
-        color: #6cbad5;
+        color: $color_blue;
         text-align: center;
     }
     p.subtitle {
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 700;
         color: white;
         text-align: center;
     }
     p.text {
         color: white;
-        font-size: .8em;
+        font-size: .7em;
         text-align: center;
     }
     button {
@@ -218,7 +271,7 @@ button {
     p.title {
         font-size: 1.6em;
         font-weight: 700;
-        color: #6cbad5;
+        color: $color_blue;
         text-align: center;
     }
     .event {
@@ -237,12 +290,140 @@ button {
             p.subtitle {
                 font-size: 1.2em;
                 font-weight: 700;
-                color: #6cbad5;
+                color: $color_blue;
             }
             p.text {
                 font-size: 14px;
                 color: #454545;
                 text-align: center;
+            }
+        }
+    }
+}
+
+.aliados {
+    p.title {
+        font-size: 1.4em;
+        color: $color_blue;
+        font-weight: 700;
+        text-align: center;
+    }
+    hr {
+        margin: 15px auto;
+    }
+    p.text {
+        text-align: center;
+        color: #454545;
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+    img {
+        width: 90%;
+        margin: 0 auto;
+        display: table;
+    }
+}
+
+.our_blog {
+    p.title {
+        font-size: 1.4em;
+        color: $color_blue;
+        font-weight: 700;
+        text-align: center;
+    }
+    hr {
+        margin: 15px auto;
+    }
+    .post {
+        background: #f9f9f9;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        .space {
+            padding: 10px;
+        }
+        p.date {
+            color: #454545;
+            font-size: .8em;
+            font-weight: 400;
+            i {
+                color: #e57e00;
+                font-size: 15px;
+            }
+        }
+        p.subtitle {
+            color: #000000;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        p.text {
+            color: #4c4f4e;
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+    }
+}
+
+.contact {
+    background: url('../img/back_contact.jpg'), #f9f9f9;
+    background-size: 45% 100%;
+    background-repeat-x: no-repeat;
+    background-position: right;
+    p.title {
+        font-size: 1.4em;
+        color: $color_blue;
+        font-weight: 700;
+        text-align: center;
+    }
+    p.text {
+        font-size: 1em;
+        color: #454545;
+        font-weight: 400;
+    }
+    button {
+        background-color: #e57e00;
+        color: white;
+        transition: all .5s ease;
+        &:hover {
+            background-color: white;
+            color: #e57e00;
+            transition: all .5s ease;
+        }
+    }
+}
+
+footer {
+    background-color: #212321;
+    p {
+        text-align: center;
+        color: white;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .contact {
+        background: #f9f9f9;
+        background-position: right;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .top_bar {
+        a {
+            font-size: .6em;
+            i {
+                font-size: 1em;
+            }
+        }
+    }
+    nav {
+        ul.ml-auto {
+            flex-direction: row;
+            i {
+                margin: 0 10px;
+                font-size: 2em;
             }
         }
     }
