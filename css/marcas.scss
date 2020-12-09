@@ -1,0 +1,430 @@
+$color_blue:#33c2db;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    border-top: 1px solid #000;
+    width: 10%;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button {
+    background-color: white;
+    color: #e57e00;
+    border: 1px solid #e57e00;
+    padding: 5px 15px;
+    margin: 10px 0;
+    transition: all .5s ease;
+    &:hover {
+        color: white;
+        background-color: #e57e00;
+        transition: all .5s ease;
+    }
+}
+
+.slick-dots {
+    bottom: -45px;
+    li {
+        button {
+            &:before {
+                color: #dbdbdb;
+            }
+        }
+    }
+    li.slick-active {
+        button {
+            &:before {
+                color: $color_blue;
+            }
+        }
+    }
+}
+
+.slick-prev,
+.slick-next {
+    width: 30px;
+    height: 30px;
+    &:before {
+        color: black;
+        font-size: 30px;
+    }
+}
+
+.top_bar {
+    a {
+        color: #000000;
+        font-weight: 700;
+        font-size: .7em;
+        i {
+            color: $color_blue;
+            font-size: 1.4em;
+        }
+    }
+    button {
+        width: 100%;
+        background: #33c2db;
+        .navbar-toggler-icon {
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+    }
+}
+
+nav {
+    background: $color_blue;
+    button {
+        border: 2px solid white;
+    }
+    ul {
+        li {
+            a {
+                font-size: .7em;
+                i {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+.main_banner {
+    background: url('../img/main_banner_home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    .overlay {
+        background-color: #00000080;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    p.title {
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+    p.subtitle {
+        color: white;
+        font-size: 2.2em;
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
+.what_is {
+    p.title {
+        color: $color_blue;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    p.text {
+        font-size: 1em;
+        font-weight: 300;
+    }
+}
+
+.benefits {
+    hr {
+        margin: 1em auto;
+    }
+    p.title {
+        color: $color_blue;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-align: center;
+    }
+    p.text {
+        font-size: 1em;
+        font-weight: 300;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    i {
+        font-size: 35px;
+        color: $color_blue;
+        margin: 0 10px;
+    }
+    p.benefit1 {
+        font-size: 1em;
+        font-weight: 700;
+        color: $color_blue;
+    }
+    p.benefit2 {
+        font-size: .8em;
+        font-weight: 300;
+        color: #848484;
+    }
+}
+
+.how_it_works {
+    background: url('../img/how_it_works.jpg');
+    background-position: center;
+    background-size: cover;
+    .overlay {
+        background-color: #00000080;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    p.title {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    p.b-20 {
+        font-weight: 700;
+        font-size: 1.3em;
+        color: white;
+        text-align: center;
+    }
+    img {
+        width: 55px;
+        margin: 0 auto;
+        display: table;
+    }
+    button {
+        background-color: #e57e00;
+        color: white;
+        transition: all .5s ease;
+        &:hover {
+            background-color: white;
+            color: #e57e00;
+            transition: all .5s ease;
+        }
+    }
+}
+
+.need_know {
+    .item_1 {
+        background: url('../img/need_item1.jpg');
+    }
+    .item_2 {
+        background: url('../img/need_item2.jpg');
+    }
+    .item_3 {
+        background: url('../img/need_item3.jpg');
+    }
+    .item_4 {
+        background: url('../img/need_item4.jpg');
+    }
+    .need_item {
+        background-size: cover;
+        background-position: center;
+        height: 280px;
+    }
+    .overlay {
+        background-color: #072935b3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    p.title {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: $color_blue;
+        text-align: center;
+    }
+    p.subtitle {
+        font-size: 1em;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+    p.text {
+        color: white;
+        font-size: .7em;
+        text-align: center;
+    }
+    button {
+        margin: 0 auto;
+        display: table;
+    }
+}
+
+.events {
+    p.title {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: $color_blue;
+        text-align: center;
+    }
+    .event {
+        position: relative;
+        img {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .box {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            position: absolute;
+            bottom: 0;
+            background: white;
+            left: 20%;
+            padding: 10px;
+            p.subtitle {
+                font-size: 1.2em;
+                font-weight: 700;
+                color: $color_blue;
+            }
+            p.text {
+                font-size: 14px;
+                color: #454545;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.aliados {
+    p.title {
+        font-size: 1.4em;
+        color: $color_blue;
+        font-weight: 700;
+        text-align: center;
+    }
+    hr {
+        margin: 15px auto;
+    }
+    p.text {
+        text-align: center;
+        color: #454545;
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+    img {
+        width: 90%;
+        margin: 0 auto;
+        display: table;
+    }
+}
+
+.our_blog {
+    p.title {
+        font-size: 1.4em;
+        color: $color_blue;
+        font-weight: 700;
+        text-align: center;
+    }
+    hr {
+        margin: 15px auto;
+    }
+    .post {
+        background: #f9f9f9;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        .space {
+            padding: 10px;
+        }
+        p.date {
+            color: #454545;
+            font-size: .8em;
+            font-weight: 400;
+            i {
+                color: #e57e00;
+                font-size: 15px;
+            }
+        }
+        p.subtitle {
+            color: #000000;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        p.text {
+            color: #4c4f4e;
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+    }
+}
+
+.contact {
+    background: url('../img/back_contact.jpg'), #f9f9f9;
+    background-size: 45% 100%;
+    background-repeat-x: no-repeat;
+    background-position: right;
+    p.title {
+        font-size: 1.4em;
+        color: $color_blue;
+        font-weight: 700;
+        text-align: center;
+    }
+    p.text {
+        font-size: 1em;
+        color: #454545;
+        font-weight: 400;
+    }
+    button {
+        background-color: #e57e00;
+        color: white;
+        transition: all .5s ease;
+        &:hover {
+            background-color: white;
+            color: #e57e00;
+            transition: all .5s ease;
+        }
+    }
+}
+
+footer {
+    background-color: #212321;
+    p {
+        text-align: center;
+        color: white;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .contact {
+        background: #f9f9f9;
+        background-position: right;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .top_bar {
+        a {
+            font-size: .6em;
+            i {
+                font-size: 1em;
+            }
+        }
+    }
+    nav {
+        ul.ml-auto {
+            flex-direction: row;
+            i {
+                margin: 0 10px;
+                font-size: 2em;
+            }
+        }
+    }
+}
