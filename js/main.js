@@ -1,3 +1,9 @@
+$('.main_slider').slick({
+    autoplay: true,
+    infinite: true,
+    arrows: false
+});
+
 $('.events_carousel').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -58,5 +64,5 @@ $('.aliados_carousel').slick({
 });
 
 $('.overlay.show_item').hover(function() {
-    $('.overlay.show_item p.text').toggleClass('display_block');
+    $('p.text', this).toggleClass('display_block');
 });
