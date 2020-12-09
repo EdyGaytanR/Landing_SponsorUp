@@ -56,3 +56,7 @@ $('.aliados_carousel').slick({
         // instead of a settings object
     ]
 });
+
+$('.overlay.show_item').hover(function() {
+    $('.overlay.show_item p.text').toggleClass('display_block');
+});
