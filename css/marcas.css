@@ -62,7 +62,7 @@ nav {
   nav button {
     border: 2px solid white; }
   nav ul li a {
-    font-size: .7em; }
+    font-size: .9em; }
     nav ul li a i {
       font-size: 1.5em; }
 
@@ -129,7 +129,8 @@ nav {
   font-weight: 700; }
 .what_is p.text {
   font-size: 1em;
-  font-weight: 300; }
+  font-weight: 400;
+  color: #007f93; }
 
 .benefits hr {
   margin: 1em auto; }
