@@ -35,18 +35,20 @@
         <div class="top_bar py-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                         <a href="marcas.html">
                             <img src="img/logosponsorup.png" alt="" class="logo">
                         </a>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex align-items-center justify-content-end">
-                        <a href="mailto:sponsorup@contacto.com"><img src="img/mail.png" alt=""> hola@sponsorup.mx</a>
+                    <div class="d-none d-sm-none d-md-flex col-md-6 col-lg-6 col-xl-6 align-items-center justify-content-end">
+                        <a href="http://sponsorup.com.mx/inicio/login/">
+                            <button>Regístrate</button>
+                        </a>
                     </div>
                     <!-- <div class="col-5 col-sm-5 col-md-5 col-lg-3 col-xl-3 d-flex align-items-center">
                         <a href="tel:01 800 1234 5678"><img src="img/phone.png" alt=""> 01 800 1234 5678</a>
                     </div> -->
-                    <div class="col-2 col-sm-2 d-md-none d-lg-none d-xl-none">
+                    <div class="col-2 col-sm-2 d-md-none d-lg-none d-xl-none d-flex align-items-center">
                         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon">X</span>
                         </button>
@@ -69,7 +71,7 @@
                             <a class="nav-link" href="#need_know">Eventos ON-DEMAND</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Acuerdos y precio</a>
+                            <a class="nav-link" href="Acuerdos_Precio.html" target="_blank">Acuerdos y precio</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#need_know">FAQ´s</a>
@@ -145,9 +147,9 @@
                             conceptos y experiencias para realizarse durante la pandemia.<br><br> Adicionalmente, diseñamos una estrategia a través de los patrocinios, para Inspirar y Empoderar a las personas, y generar un ambiente y pensamiento positivo
                             en la población; que eventualmente contribuya a lograr una rápida recuperación económica y social.
                         </p>
-                        <a href="">
+                        <!-- <a href="">
                             <button>Saber màs</button>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -213,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="">
+                <a href="http://sponsorup.com.mx/inicio/login/">
                     <button>Regístrate</button>
                 </a>
             </div>
@@ -224,7 +226,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 py-2">
                         <div class="need_item item_1">
-                            <div class="overlay show_item">
+                            <div class="overlay show_item" data-toggle="modal" data-target="#modal_eventos">
                                 <p class="subtitle">EVENTOS ON-DEMAND<br>Experiencias en vivo durante la pandemia</p>
                                 <p class="text">Innovador modelo de eventos y experiencias boutique seguras, disponibles por un tiempo limitado. Estos eventos y experiencias solo se realizarán cuando sean patrocinadas.</p>
                             </div>
@@ -232,7 +234,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 py-2">
                         <div class="need_item item_2">
-                            <div class="overlay show_item">
+                            <div class="overlay show_item" data-toggle="modal" data-target="#modal_analiza_verifica">
                                 <p class="subtitle">¿Qué se Analiza y Verifica de los Eventos?</p>
                                 <p class="text">Verificamos a los organizadores y que el evento cuente con el tiempo, los contratos y permisos que garanticen su realización. De igual manera analizamos su perfil comercial y el de la audiencia.</p>
                             </div>
@@ -240,7 +242,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 py-2">
                         <div class="need_item item_3">
-                            <div class="overlay show_item">
+                            <div class="overlay show_item" data-toggle="modal" data-target="#modal_mejores_eventos">
                                 <p class="subtitle">¿Cómo encuentro el mejor Evento para mi Marca?</p>
                                 <p class="text">Elige entre las diversas posibilidades, que eventos hacen match con tu concepto, con tus valores, con tu público; visualiza como podrán apoyarte a crear experiencias y conexiones inolvidables. Conecta</p>
                             </div>
@@ -248,7 +250,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 py-2">
                         <div class="need_item item_4">
-                            <div class="overlay show_item">
+                            <div class="overlay show_item" data-toggle="modal" data-target="#modal_inspiracion">
                                 <p class="subtitle">Inspiremos y empoderemos a la sociedad</p>
                                 <p class="text">Impulsemos la generación de un ambiente y un pensamiento positivo en la población, que nos una y nos empodere para lograr una rápida recuperación económica y social</p>
                             </div>
@@ -423,13 +425,94 @@
             </div>
         </div>
         <footer class="py-2">
-            <p><a href="aviso_privacidad.html">Aviso de Privacidad</a> |
-                <a href="terminos_condiciones.html">Términos y Condiciones</a> |
-                <a href="nosotros.html">Sponsor Up 2020</a> |
-                <a href="pacto.html">Pacto </a> |
+            <p><a href="aviso_privacidad_main.html" target="_blank">Aviso de Privacidad</a> |
+                <a href="terminos_condiciones_main.html"  target="_blank">Términos y Condiciones</a> |
+                <a href="politicas _privacidad_main.html"  target="_blank">Sponsor Up 2021</a> |
+                <a href="pacto_moral.html"  target="_blank">Pacto </a> |
                 <a href="saber_marcas.html">Marcas</a> |
                 <a href="saber_organizadores.html">Eventos</a></p>
         </footer>
+    </div>
+    <!-- Modales -->
+    <div class="modal fade legales" id="modal_eventos" tabindex="-1" role="dialog" aria-labelledby="modal_eventos"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">EVENTOS ON-DEMAND. Experiencias en vivo durante la pandemia.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text">Los Eventos son exponentes de tendencias, de ideas, de innovaciones. Son espacios altamente atractivos que generan expectación y emoción, que nos permiten
+                    aliarnos con sus valores, mostrar y comunicar nuestra Marca de forma directa y personal, diferenciarnos de nuestra competencia, crear experiencias envolventes y conectarnos emocionalmente con nuestro público. Con <b>Eventos On-Demand</b>                    reinventamos la oferta de eventos para seguir disfrutando y potenciar todos estos beneficios y generar un mayor engagement durante la pandemia. <br><br> <b>Eventos On-Demand</b> es un formato de <b>Eventos Boutique</b> con todas las
+                    medidas de sanidad y sana distancia, dirigidos a públicos muy específicos, y donde la experiencia del público es la protagonista. <br><br> Estos eventos son proyectos profesionales, vigentes por un tiempo determinado, listos para realizarse
+                    en cuanto sean patrocinados, permitiendo desde el primer momento, la integración orgánica de las Marcas. <br><br> En Sponsor Up ofrecemos a las Marcas, un amplio catálogo de <b>Eventos On-Demand</b>, que les permita conectarse con
+                    públicos específicos, hacer negocio, generar experiencias con los asistentes, con sus clientes, y alcanzar a la audiencia digital del evento. <br><br> Como Sponsor Up verificamos que los proyectos cuenten con los compromisos y permisos
+                    necesarios para llevarse a cabo y acompañamos el proceso de negociación y cierre de patrocinio, brindándole apoyo y seguridad a la Marca.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade legales" id="modal_analiza_verifica" tabindex="-1" role="dialog" aria-labelledby="modal_analiza_verifica"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¿Qué se Analiza y Verifica de los Eventos?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text"> Al registrarse, Sponsor Up verifica la existencia del Organizador como persona física o moral, y su experiencia en producción. <br><br>                    Los <b>Eventos Regulares o tradicionales</b>, pasan por un proceso de análisis y validación, en el cual se verifica que cuenten con la debida anticipación, así como con los contratos y permisos que garanticen la realización del evento;
+                    que se permita la presencia e integración de Marcas y cuenten con audiencias segmentadas, finalmente se perfilan comercialmente para generar mayores match entre Marcas y Eventos. <br><br> En los <b>Eventos On-Demand</b> además del
+                    proceso de análisis comercial y generación de match, verificamos que los proyectos cuenten con las medidas de seguridad sanitaria y los compromisos necesarios para llevarse a cabo,. <br><br> Para el caso de los <b>Eventos Regulares</b>                    u <b>On-Demand</b> que se conviertan en <b>Eventos Activadores</b>, se verifica su adhesión al pacto <b>#MasUnidosQueNuncaMX2021</b>, se mapea la cadena de valor que activan con su realización y se garantiza que integren beneficios
+                    comerciales base, altamente atractivos para sus patrocinadores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade legales" id="modal_mejores_eventos" tabindex="-1" role="dialog" aria-labelledby="modal_mejores_eventos"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¿Cómo encuentro el mejor Evento para mi Marca?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text">A través de un ágil motor de búsqueda, puedes encontrar fácil y rápidamente, aquellos eventos que mejor se ajusten a tus objetivos
+                    y estrategias comerciales. Puedes filtrarlos por tipo o concepto del evento, fechas, ubicación, perfil del público asistente, rango de patrocinios e incluso por la cadena económica que generan, es decir, el número empresas y empleos
+                    que apoyan a conservar con su realización. <br><br> Una vez seleccionado, puedes ver el detalle de cada evento como la descripción, información general, imágenes y videos, line up, perfil del público asistente, media value, promoción
+                    y paquetes comerciales de patrocinio, así como la revisión hecha por Sponsor Up. <br><br> Cuando te intereses por un evento en particular, te puedes poner en contacto directamente con el Organizador a través de la misma plataforma
+                    para negociar algún paquete comercial, beneficios específicos, patrocinio en especie o enviarle un briefing para solicitarle un traje a la medida. En todo momento contarás con el apoyo de un consultor de Sponsor Up quien estará a tu
+                    lado para encontrar los mejores eventos y negociar los mejores patrocinios para tu Marca.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade legales" id="modal_inspiracion" tabindex="-1" role="dialog" aria-labelledby="modal_inspiracion"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inspiremos y empoderemos a la sociedad</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text"> Ningún General, ningún Líder, ninguna Sociedad, quiere salir a la guerra con sus soldados (su población), desunidos y desmotivados. <br><br> Hoy necesitamos
+                    estar unidos como sociedad, apoyándonos solidariamente y aportando lo mejor de nosotros. La pandemia es una prueba global y las sociedades que aprendan a caminar unidas y solidarias, son aquellas que escalarán lugares en el nuevo orden
+                    post-pandemia. <br><br> Nuestro propósito como Sponsor Up es conectar Marcas y Eventos para crear Sinergia y generar un Ambiente y Pensamiento positivo en la población. <br><br> Por ello fomentamos la realización de Eventos Activadores,
+                    que están comprometidos con inspirar y empoderar a sus audiencias, programando en el consciente de las personas:</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

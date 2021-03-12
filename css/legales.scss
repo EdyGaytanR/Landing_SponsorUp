@@ -48,7 +48,11 @@ button {
     }
     button {
         width: 100%;
-        background: #33c2db;
+        background-color: #e57e00;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         .navbar-toggler-icon {
             width: 100%;
             height: 100%;
@@ -74,33 +78,29 @@ nav {
     }
 }
 
-#legales p,
-#legales li {
-    color: #376092;
-}
-
-#legales h3 {
-    text-align: center;
-    margin: 15px 0;
-    color: #31859c;
-}
-
-#legales p.title {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-#legales p.text {
-    margin: 10px 0;
-}
-
-#legales p.ligth {
-    color: #3c97ac;
-}
-
-#legales hr {
-    width: 100%;
-    border-top: 2px solid #eb7612;
+#legales{
+    p,li{
+        color: #376092;
+    }
+    h3 {
+        text-align: center;
+        margin: 15px 0;
+        color: #31859c;
+    }
+    p.title {
+        font-weight: 700;
+        font-size: 22px;
+    }
+    p.text {
+        margin: 10px 0;
+    }
+    p.ligth {
+        color: #3c97ac;
+    }
+    hr {
+        width: 100%;
+        border-top: 2px solid #eb7612;
+    }
 }
 
 footer {
