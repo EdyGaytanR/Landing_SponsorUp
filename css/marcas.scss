@@ -17,7 +17,9 @@ hr {
 }
 
 a {
+    color: #454545;
     &:hover {
+        color: rgb(2, 2, 2);
         text-decoration: none;
     }
 }
@@ -80,7 +82,7 @@ button {
         color: white;
         font-size: 18px;
         font-weight: 700;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         .navbar-toggler-icon {
             width: 100%;
             height: 100%;
@@ -186,7 +188,7 @@ nav {
     p.text {
         font-size: 1em;
         font-weight: 400;
-        color: #007f93;
+        color: #212529;
     }
 }
 
@@ -450,13 +452,20 @@ footer {
         a {
             color: white;
             text-decoration: none;
+            &:hover {
+                color: #e57e00;
+            }
         }
     }
 }
 
-.legales{
-    p,li{
+.legales {
+    p,
+    li {
         color: #376092;
+    }
+    li {
+        margin: 10px 0;
     }
     h3 {
         text-align: center;
@@ -468,7 +477,7 @@ footer {
         font-size: 22px;
     }
     p.text {
-        margin: 10px 0;
+        margin: 20px 0;
     }
     p.ligth {
         color: #3c97ac;
@@ -479,25 +488,24 @@ footer {
     }
 }
 
-.modal{
-    .modal-content{
+.modal {
+    .modal-content {
         border: 2px solid $color_blue;
-        .modal-header{
+        .modal-header {
             border-bottom: 2px solid #eb7612;
             align-items: center;
-            .modal-title{
+            .modal-title {
                 font-weight: 700;
                 font-size: 22px;
-                color: #376092; 
+                color: #376092;
             }
         }
-        .modal-body{
-        height: 50vh;
-        overflow-y: auto;
+        .modal-body {
+            height: 50vh;
+            overflow-y: auto;
+        }
     }
-    }
-    
-    button{
+    button {
         &:hover {
             background-color: transparent;
         }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SponsorUp | Marcas</title>
+    <title>SponsorUp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,96 +32,139 @@
 <body>
 
     <div id="main-content">
-        <nav class="navbar navbar-expand navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <i class="far fa-user"></i> LOGIN
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="main container py-2">
-            <div class="d-flex justify-content-center">
-                <img src="img/logosponsorup.png" alt="">
-            </div>
-            <h1>Nuestro propósito es Inspirar y Empoderar a las personas, para generar un Ambiente y Pensamiento positivo en la población.</h1>
-            <h3>Plataforma de Patrocinios de Eventos</h3>
-            <div class="row">
-                <div class="col-12 col-md-6 p-5 l_r">
-                    <a href="organizadores.html">
-                        <div class="teaser t_org">
-                            <div class="overlay">
-                                <p>Acceso Organizadores de Eventos</p>
-                            </div>
-                        </div>
-                    </a>
+        <div class="top_bar py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="marcas.html">
+                            <img src="img/logosponsorup.png" alt="" class="logo">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex align-items-center justify-content-end">
+                        <a href="http://sponsorup.com.mx/inicio/login/">
+                            <button>Regístrate</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 p-5 l_l">
-                    <a href="marcas.html">
-                        <div class="teaser t_mar">
-                            <div class="overlay">
-                                <p>Acceso Marcas / Agencias</p>
-                            </div>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark">
+        </nav>
+        <div class="main">
+            <div class="main_banner">
+                <div class="overlay">
+                    <div class="container">
+                        <h1>Nuestro propósito es conectar a Marcas y Eventos,<br><span>y generar un Ambiente y Pensamiento positivo en la población.</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <h2>Plataforma de Patrocinios de Eventos</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-6 p-4">
+                        <a href="organizadores.html">
+                            <img src="img/what_is_sponsorup.png" alt="">
+                            <p class="title">Soy Organizador</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 p-4">
+                        <a href="marcas.html">
+                            <img src="img/what_is_organizador.jpg" alt="">
+                            <p class="title">Soy Marca</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aliados py-5">
+            <div class="container">
+                <p class="title">Aliados Estratégicos</p>
+                <hr>
+                <div class="container">
+                    <div class="aliados_carousel">
+                        <div>
+                            <img src="img/aliados_1.jpg" alt="">
                         </div>
-                    </a>
+                        <div>
+                            <img src="img/aliados_2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/aliados_1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/aliados_2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/aliados_1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/aliados_2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/aliados_1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/aliados_2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 py-5">
+                        <p class="title">Contáctanos</p>
+                        <p class="text">Vive la experiencia de SponsorUp | <a href="tel:55 37 38 91 01">55 37 38 91 01</a></p>
+                        <form class="pt-5">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="input_nombre">Nombre*</label>
+                                        <input type="text" class="form-control" id="input_nombre" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="input_apellido">Apellido*</label>
+                                        <input type="text" class="form-control" id="input_apellido" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="input_correo">Correo*</label>
+                                        <input type="email" class="form-control" id="input_correo" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="input_telefono">Telefono*</label>
+                                        <input type="number" class="form-control" id="input_telefono" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="input_mensaje">Mensaje*</label>
+                                        <textarea class="form-control" id="input_mensaje" rows="3" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"></div>
                 </div>
             </div>
         </div>
         <footer class="py-2">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-3">
-                        <img src="img/SponsorUpCool_white.png" alt="" class="my-3">
-                        <p>© 2020 SponsorUp</p>
-                        <p>Todos los derechos reservados</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <a href="pacto_moral.html">
-                            <p>Pacto #MasUnidosQueNuncaMX2021</p>
-                        </a>
-                        <a href="reglas_organizador.html">
-                            <p>FAQ´s Organizadores</p>
-                        </a>
-                        <a href="reglas_marcas.html">
-                            <p>FAQ´s Marcas</p>
-                        </a>
-                        <a href="">
-                            <p>Blog</p>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <a href="aviso_privacidad_main.html">
-                            <p>Aviso de Privacidad</p>
-                        </a>
-                        <a href="politicas _privacidad_main.html">
-                            <p>Política de Privacidad</p>
-                        </a>
-                        <a href="terminos_condiciones_main.html">
-                            <p>Terminos y Condiciones</p>
-                        </a>
-                        <a href="">
-                            <p>Contacto</p>
-                        </a>
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Contact Support">
-                            </div>
-                        </form>
-                        <p>Follow Us</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://www.facebook.com/SponsorUpMX/"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/SponsorUpMX"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
-                            <a href="https://www.instagram.com/sponsorupmx/"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/company/sponsor-up/	"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p><a href="aviso_privacidad_main.html" target="_blank">Aviso de Privacidad</a> |
+                <a href="terminos_condiciones_main.html" target="_blank">Términos y Condiciones</a> |
+                <a href="nosotros.html" target="_blank">Sponsor Up 2021</a> |
+                <a href="pacto_moral.html" target="_blank">Pacto </a> |
+                <a href="saber_marcas.html">Marcas</a> |
+                <a href="saber_organizadores.html">Eventos</a></p>
         </footer>
     </div>
 
