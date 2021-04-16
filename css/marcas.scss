@@ -66,6 +66,11 @@ button {
     }
 }
 
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+}
+
 .top_bar {
     a {
         color: #000000;
@@ -391,6 +396,7 @@ nav {
     .post {
         background: #f9f9f9;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        margin: 10px 0;
         .space {
             padding: 10px;
         }

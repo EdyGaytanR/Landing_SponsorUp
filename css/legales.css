@@ -121,6 +121,105 @@ footer p a {
   text-decoration: none;
 }
 
+.slick-dots {
+  bottom: -45px;
+}
+
+.slick-dots li button:before {
+  color: #dbdbdb;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #33c2db;
+}
+
+.slick-prev,
+.slick-next {
+  width: 30px;
+  height: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 30px;
+}
+
+.aliados p.title {
+  font-size: 1.4em;
+  color: #33c2db;
+  font-weight: 700;
+  text-align: center;
+}
+
+.aliados hr {
+  margin: 15px auto;
+}
+
+.aliados p.text {
+  text-align: center;
+  color: #454545;
+  font-size: 1em;
+  padding-bottom: 15px;
+}
+
+.aliados img {
+  width: 90%;
+  margin: 0 auto;
+  display: table;
+}
+
+.our_blog p.title {
+  font-size: 1.4em;
+  color: #33c2db;
+  font-weight: 700;
+  text-align: center;
+}
+
+.our_blog hr {
+  margin: 15px auto;
+}
+
+.our_blog .post {
+  background: #f9f9f9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin: 10px 0;
+  opacity: 0.5;
+  transition: all .5s ease;
+}
+
+.our_blog .post:hover {
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.our_blog .post .space {
+  padding: 10px;
+}
+
+.our_blog .post p.date {
+  color: #454545;
+  font-size: .8em;
+  font-weight: 400;
+}
+
+.our_blog .post p.date i {
+  color: #e57e00;
+  font-size: 15px;
+}
+
+.our_blog .post p.subtitle {
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.our_blog .post p.text {
+  color: #4c4f4e;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
 @media only screen and (max-width: 767px) {
   .top_bar a {
     font-size: .6em;
